@@ -1,5 +1,226 @@
+{% from 'macros/page-title.html' import pageTitle %}
+
 {% extends 'layouts/main.html' %}
 
 {% block content %}
-<main class="container-fluid"></main>
+<main class="container-fluid">
+  {{ pageTitle('Standings', 'Some kind of sub heading') }}
+
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Player</th>
+      <th class="text-center" scope="col">Pld</th>
+      <th class="text-center d-none d-md-table-cell" scope="col">W</th>
+      <th class="text-center d-none d-md-table-cell" scope="col">D</th>
+      <th class="text-center d-none d-md-table-cell" scope="col">L</th>
+      <th class="text-center d-none d-sm-table-cell" scope="col">+/-</th>
+      <th class="text-center" scope="col">Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">15</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">16</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">17</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">18</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">19</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    <tr>
+      <th scope="row">20</th>
+      <td>Player name</td>
+      <td class="text-center">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-md-table-cell">0</td>
+      <td class="text-center d-none d-sm-table-cell">0</td>
+      <td class="text-center">0</td>
+    </tr>
+    </tbody>
+  </table>
+</main>
 {% endblock %}
