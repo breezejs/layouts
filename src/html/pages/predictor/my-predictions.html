@@ -1,0 +1,112 @@
+{% from 'macros/page-title.html' import pageTitle %}
+
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<main class="container-fluid">
+  {{ pageTitle('My predictions', 'Some kind of sub heading') }}
+
+  <form>
+    <div class="predictor-form__fixture">
+      <div class="row align-items-center">
+        <div class="col-4 col-md-5 text-right">
+          <strong class="d-block text-truncate">Team A</strong>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="input-group">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team A against Team B">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team B against Team A">
+          </div>
+        </div>
+        <div class="col-4 col-md-5">
+          <strong class="d-block text-truncate">Team B</strong>
+        </div>
+      </div>
+    </div>
+    <div class="predictor-form__fixture">
+      <div class="row align-items-center">
+        <div class="col-4 col-md-5 text-right">
+          <strong class="d-block text-truncate">Team A</strong>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="input-group">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team A against Team B">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team B against Team A">
+          </div>
+        </div>
+        <div class="col-4 col-md-5">
+          <strong class="d-block text-truncate">Team B</strong>
+        </div>
+      </div>
+    </div>
+    <div class="predictor-form__fixture">
+      <div class="row align-items-center">
+        <div class="col-4 col-md-5 text-right">
+          <strong class="d-block text-truncate">Team A</strong>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="input-group">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team A against Team B">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team B against Team A">
+          </div>
+        </div>
+        <div class="col-4 col-md-5">
+          <strong class="d-block text-truncate">Team B</strong>
+        </div>
+      </div>
+    </div>
+    <div class="predictor-form__fixture">
+      <div class="row align-items-center">
+        <div class="col-4 col-md-5 text-right">
+          <strong class="d-block text-truncate">Team A</strong>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="input-group">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team A against Team B">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team B against Team A">
+          </div>
+        </div>
+        <div class="col-4 col-md-5">
+          <strong class="d-block text-truncate">Team B</strong>
+        </div>
+      </div>
+    </div>
+    <div class="predictor-form__fixture">
+      <div class="row align-items-center">
+        <div class="col-4 col-md-5 text-right">
+          <strong class="d-block text-truncate">Team A</strong>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="input-group">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team A against Team B">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team B against Team A">
+          </div>
+        </div>
+        <div class="col-4 col-md-5">
+          <strong class="d-block text-truncate">Team B</strong>
+        </div>
+      </div>
+    </div>
+    <div class="predictor-form__fixture">
+      <div class="row align-items-center">
+        <div class="col-4 col-md-5 text-right">
+          <strong class="d-block text-truncate">Team A</strong>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="input-group">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team A against Team B">
+            <input class="form-control text-center" type="number" aria-label="Your prediction for Team B against Team A">
+          </div>
+        </div>
+        <div class="col-4 col-md-5">
+          <strong class="d-block text-truncate">Team B</strong>
+        </div>
+      </div>
+    </div>
+    <div class="predictor-form__button-bar">
+      <button class="btn btn-primary" type="button">Predict</button>
+      <button class="btn btn-outline-secondary" type="button">Reset</button>
+    </div>
+  </form>
+</main>
+{% endblock %}

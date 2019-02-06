@@ -1,0 +1,15 @@
+@import '../includes/bootstrap';
+@import '../../../node_modules/bootstrap/scss/forms';
+@import '../../../node_modules/bootstrap/scss/input-group';
+
+input {
+  &[type=number] {
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
