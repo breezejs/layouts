@@ -1,0 +1,43 @@
+@import '../includes/bootstrap';
+
+.drawer {
+  &__link {
+    background-color: transparent;
+    color: $body-color;
+    display: block;
+    font-weight: $btn-font-weight;
+    user-select: none;
+    vertical-align: middle;
+    width: 100%;
+
+    @include button-size($navbar-padding-y, $navbar-padding-x, $btn-font-size, $btn-line-height, 0);
+    @include transition($btn-transition);
+
+    @include hover {
+      background-color: gray('300');
+      color: $body-color;
+      text-decoration: none;
+    }
+  }
+
+  &__backdrop {
+    background-color: $modal-backdrop-bg;
+    bottom: 0;
+    left: 0;
+    opacity: $modal-backdrop-opacity;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: $zindex-modal-backdrop;
+  }
+
+  &__panel {
+    background-color: gray('100');
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 250px;
+    z-index: 1060;
+  }
+}

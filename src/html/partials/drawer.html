@@ -1,0 +1,31 @@
+<script>
+  function closeMenu () {
+    const drawer = document.getElementById('drawer');
+
+    drawer.setAttribute('hidden', '');
+  }
+</script>
+
+<div id="drawer" hidden>
+  <nav class="drawer__panel">
+    <header class="navbar">
+      <h1 class="navbar-brand mb-0">Breeze</h1>
+    </header>
+
+    <hr class="my-0">
+
+    <ul class="list-unstyled">
+      <li>
+        <a class="drawer__link" href="#" onclick="closeMenu()">My predictions</a>
+      </li>
+      <li>
+        <a class="drawer__link" href="#" onclick="closeMenu()">Results</a>
+      </li>
+      <li>
+        <a class="drawer__link" href="#" onclick="closeMenu()">Standings</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="drawer__backdrop" onclick="closeMenu()"></div>
+</div>
