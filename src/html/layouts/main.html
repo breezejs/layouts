@@ -6,11 +6,15 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>{{title}}</title>
-  <link href="assets/css/app.css" rel="stylesheet">
+  <link href="/assets/css/app.css" rel="stylesheet">
 
   {% include 'partials/favicons.html' %}
 </head>
 <body>
+{% include 'partials/navbar.html' %}
+
 {% block content %}{% endblock %}
+
+{% include 'partials/footer.html' %}
 </body>
 </html>
